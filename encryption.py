@@ -17,8 +17,8 @@ def aes_encryption(plaintext, key, iv):
     return text
 
 
-def encrypt_password(password):
-    key = bytes.fromhex('e8a50611815ef4b1a656ab08eee882e3')
+def encrypt_password(key, password):
+    key = bytes.fromhex(key)
     iv = bytes.fromhex("3336306c75796f7540696e7374616c6c")
     password = password.encode('utf-8')
 
