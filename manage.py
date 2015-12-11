@@ -2,7 +2,7 @@
 # _*_ encoding: utf-8 _*_
 # ---------------------------------------
 # Created by: Jlfme<jlfgeek@gmail.com>
-# Created on: 2017-10-25 16:03:18
+# Created on: 2015-12-11 19:03:18
 # ---------------------------------------
 
 
@@ -81,3 +81,5 @@ class RouterManager(object):
             headers=headers
         )
         time.sleep(0.5)
+
+        return self.get_wan_ip()
